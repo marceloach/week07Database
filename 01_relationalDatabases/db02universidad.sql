@@ -30,30 +30,6 @@ SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,N
 --   Fecha de nacimiento
 --   Rut
 --   Dirección
-
--- -----------------------------------------------------
--- Schema db02universidad
---
--- EJERCICIO EN CLASE: CREAR UN ERD UNIVERSIDAD
--- 
--- La Universidad de programacion requiere realizar una base de datos donde puede llevar el control de lo siguiente, teniendo en cuenta que un campus tiene muchas carreras y que un alumno puedo pertenecer a una carrera:
--- 
--- Campus:
---   Nombre
---   Descripción
---   Dirección
--- 
--- Carrera:
---   Nombre
---   Descripción
--- 
--- Alumnos:
---   Nompre
---   Apellido paterno
---   Apellido materno
---   Fecha de nacimiento
---   Rut
---   Dirección
 -- -----------------------------------------------------
 CREATE SCHEMA IF NOT EXISTS `db02universidad` DEFAULT CHARACTER SET utf8 COLLATE utf8_bin ;
 USE `db02universidad` ;
@@ -97,6 +73,7 @@ CREATE TABLE IF NOT EXISTS `db02universidad`.`Alumnos` (
   `idAlumnos` INT NOT NULL AUTO_INCREMENT,
   `nombre` VARCHAR(45) NOT NULL,
   `apellidoPaterno` VARCHAR(45) NOT NULL,
+  `apellidoMaterno` VARCHAR(45) NOT NULL,
   `rut` VARCHAR(12) NOT NULL,
   `fechaNacimiento` DATE NOT NULL,
   `direccion` VARCHAR(45) NOT NULL,
