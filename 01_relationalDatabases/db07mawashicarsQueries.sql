@@ -21,7 +21,7 @@
 
 -- PASO 01 --
 
- CREATE DATABASE db07mawashicars
+CREATE DATABASE db07mawashicars
   WITH
   OWNER = postgres
   ENCODING = 'UTF8'
