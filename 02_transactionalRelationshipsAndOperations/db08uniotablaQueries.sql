@@ -4,7 +4,7 @@
   TEMAS:
     Realizar consultas usando el comando JOIN para el consumo de datos entre tablas relacionadas.
     Realizar subconsultas para la anidación de datos entre tablas.
- */
+*/
 
 -- INNER JOIN --
 SELECT * FROM usuario
